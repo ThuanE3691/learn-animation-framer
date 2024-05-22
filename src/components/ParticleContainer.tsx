@@ -27,10 +27,13 @@ const ParticlesContainer = ({init, setInit, className}) => {
     const options: ISourceOptions = useMemo(
         () => ({
             background: {
-                color: "#fff",
+                // color: "#fff",
+                image: "url('https://marketplace.canva.com/EAFCO6pfthY/1/0/1600w/canva-blue-green-watercolor-linktree-background-F2CyNS5sQdM.jpg')",
+                repeat: "no-repeat",
+                size: "cover",
             },
             styles: {
-              height: "100%",
+                height: "100%",
             },
             particles: {
                 color: {
