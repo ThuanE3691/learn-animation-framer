@@ -5,6 +5,7 @@ import animationSample from "./animationSample";
 import { useState } from "react";
 import { SelectAnimation } from "./components/SelectAnimation";
 import ParticlesContainer from "./components/ParticleContainer";
+import HeaderWithAnimation from "./components/HeaderWithAnimation";
 
 function App() {
 	const [animationSelected, setAnimationSelected] = useState<string>("Fade In");
@@ -28,9 +29,10 @@ function App() {
                     setInit={setInitParticles}
                 ></ParticlesContainer>
             </div>
+            <HeaderWithAnimation></HeaderWithAnimation>
 
             <div className="flex flex-col items-center justify-center w-full">
-                <h1 className="text-4xl italic">Animation Framer</h1>
+                <h1 className="text-4xl italic mt-8">Animation Framer</h1>
                 <h4 className="">By Thuận</h4>
             </div>
             <div className="flex mt-6 ml-6">
